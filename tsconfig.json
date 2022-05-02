@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "baseUrl": "src",
+    "esModuleInterop": true,
+    "lib": ["esnext"],
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "outDir": "build",
+    "paths": {
+      "~/*": ["./*"]
+    },
+    "removeComments": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es5"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
