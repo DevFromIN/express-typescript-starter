@@ -1,6 +1,6 @@
 {
   "name": "express-typescript-starter",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "src/server.ts",
   "repository": "git@github.com:DevFromIN/express-typescript-starter.git",
   "author": "Selvabalaji S <devfromin@gmail.com>",
@@ -9,8 +9,8 @@
     "yarn": "1.x"
   },
   "scripts": {
-    "dev": "nodemon -r tsconfig-paths/register src/server.ts",
-    "start": "ts-node --transpile-only -r tsconfig-paths/register src/server.ts"
+    "dev": "nodemon --exec ts-node -r tsconfig-paths/register --files src/server.ts",
+    "start": "ts-node --transpile-only -r tsconfig-paths/register --files src/server.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
