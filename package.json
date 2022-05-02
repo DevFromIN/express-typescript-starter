@@ -1,10 +1,13 @@
 {
   "name": "express-typescript-starter",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "main": "src/server.ts",
   "repository": "git@github.com:DevFromIN/express-typescript-starter.git",
   "author": "Selvabalaji S <devfromin@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "yarn": "1.x"
+  },
   "scripts": {
     "dev": "nodemon -r tsconfig-paths/register src/server.ts",
     "start": "ts-node --transpile-only -r tsconfig-paths/register src/server.ts"
@@ -19,6 +22,13 @@
   "devDependencies": {
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
     "nodemon": "^2.0.16",
     "ts-node": "^10.7.0",
     "tsconfig-paths": "^3.14.1",

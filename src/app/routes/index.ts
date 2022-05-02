@@ -1,21 +1,21 @@
-import type { Application } from 'express';
+import type { Application } from 'express'
 
 function attachPublicRoutes(app: Application) {
   app.get('/', (_req, res) => {
-    res.status(200).send('Hello, World!');
-  });
+    res.status(200).send('Hello, World!')
+  })
 
   app.get('/ping', (_req, res) => {
-    res.status(200).send('pong');
-  });
+    res.status(200).send('pong')
+  })
 }
 
 // function attachPrivateRoutes(app: Application) {
-//   //
+//
 // }
 
 export default function attachRoutes(app: Application) {
-  attachPublicRoutes(app);
+  attachPublicRoutes(app)
 
   // use auth middleware
   // app.use(useAuth)
